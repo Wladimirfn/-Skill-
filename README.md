@@ -38,6 +38,9 @@ Lo uso para:
 Por ahora, iré agregando carpetas y archivos por tema, por ejemplo:
 
 - `buenas-practicas-bd/` – Buenas prácticas de bases de datos y Supabase.
+- `Normalizacion DB/` – Notas de normalización de bases de datos.
+- `review-ambiguous-start/` – Gentle AI 2.1.11: qué hacer cuando `review status` devuelve `applicability: ambiguous` / `action: select_lineage`. Evita seleccionar una lineage ajena o bypassear el guard cuando la solución real es simplemente correr `review start`.
+- `review-capture-helper/` – Gentle AI 2.1.11: workaround para cuando `review capture-result` falla con `decode reviewer result: invalid character ...` (el reviewer devuelve JSON envuelto en prosa/fence markdown). Recupera el `.raw` preservado por identidad exacta (lineage+lens+order, nunca por fecha) y lo reenvía por el facade nativo.
 - Más skills se irán sumando a medida que vaya aprendiendo y formalizando lo que hago.
 
 ---
